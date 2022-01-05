@@ -1,0 +1,19 @@
+@media (min-width:1200px) {
+  /* Job_list */
+  .job_list{width: 100%; height: 50px; background: #000; color:#aaa;}
+  .act_list{width:50%; height: 100%; line-height: 50px; margin: 0 auto; display: flex; justify-content: center; align-content: center; align-items: center; text-align: center;}
+  .act_list li{width: 20%; height: 100%; float: left; }
+  .act_list>li:hover{border-bottom: 3px solid #367df3; transition: 1s; color:#fff; cursor: pointer;}
+  .class_list{width: 100%; height: auto; display: none; position: relative; z-index: 99;}
+  .class_list li{width: 100%; height: auto; line-height: 50px; background: #000; font-size: 14px;}
+  .class_list li a{color:#aaa;}
+  .class_list li a:hover{color:#fff;}
+
+  /* job_move */
+  .job_move{width: 100vw; height: 450px; background: #000; position: relative;}
+  .gif_move{width: 1200px; height: 100%; margin: 0 auto; position: absolute; top: 0; left: 0; right:0;}
+  .icon_img{width: 450px; height: 100%; margin: 0 auto; display: none; position: absolute; left: 0; right: 0;}
+  .icom_img img{width: 100%; height: 100%; }
+
+  /* job_skill */
+}

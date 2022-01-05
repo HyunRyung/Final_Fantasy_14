@@ -1,0 +1,89 @@
+*{font-family: "times new loman","Noto Sans KR";}
+@font-face{
+  font-family : "times new loman";
+  src:url(../font/times\ new\ roman.ttf)
+}
+
+@font-face{
+  font-family: "Noto Sans KR";
+  src: url(../font/NotoSansKR-Regular.otf);
+}
+
+
+
+
+@media (max-width:599px){
+/* header */
+header{width: 100%; height: 50px; margin: 0 auto; background: #fff;}
+.game_logo{width: 180px; height:40px;float: left; margin: 0 auto; margin-top:5px; margin-left: 20px; }
+.game_logo img{width: 100%; height: 100%;}
+nav{width: 30%; height: 40px; float: right; margin: 0 auto; margin-top: 15px;  margin-right: 10px; text-align: center; font-size: 12px;}
+nav ul{width: 100%; height: 100%;}
+nav ul li{width: 50%; height: 100%; float: left;}
+nav ul li:nth-of-type(3){display: none;}
+nav ul li:nth-of-type(3) img{width:14px;}
+
+/* footer */
+footer{width: 100%; height: 200px; margin: 0 auto; background:#000; color:#fff;  overflow: hidden; font-size: 12px;}
+footer ul {width: 100%; height: 30px; margin-bottom: 40px; padding-top: 20px;}
+footer li{width: calc(100%/7); height: 100%; float: left; text-align: center; font-size: 10px;}
+footer li:nth-of-type(2){width: 12%;}
+footer li:nth-of-type(4){width: 15.5%;}
+footer li:last-child{border-right: none;}
+footer li a:link,footer li a:visited{ color:#fff;}
+footer li a:hover{color:#aaa;}
+.footer_text{width: 100%; height: 110px; margin: 0 auto;}
+.footer_logo{width: 40%; height: 100px; float: left; margin: 0 auto;}
+.footer_logo img{width: 100%; height: 100%;}
+.footer p{float: right;}
+}
+
+
+@media (min-width:600px) and (max-width:1199px){
+/* header */
+header{width: 100%; height: 50px; margin: 0 auto; background: #fff;}
+.game_logo{width: 180px; height:40px;float: left; margin: 0 auto; margin-top:5px; margin-left: 20px; }
+.game_logo img{width: 100%; height: 100%;}
+nav{width: 330px; height: 40px; float: right; margin: 0 auto; margin-top: 10px;  margin-right: 15px; text-align: center; font-size: 14px;}
+nav ul{width: 100%; height: 100%;}
+nav ul li{width: 33.3%; height: 100%; float: left;}
+nav ul li:nth-of-type(3) img{width:16px;}
+
+/* footer */
+footer{width: 100%; height: 300px; margin: 0 auto; background:#000; color:#fff; font-size: 14px;}
+footer ul {width: 100%; height: 30px; margin-bottom: 40px; padding-top: 20px;}
+footer li{width: calc(100%/7); height: 100%; float: left; text-align: center; border-left: 1px solid #eee; border-right:  1px solid #eee; font-size: 14px;}
+footer li:first-of-type{border-left: none;}
+footer li:last-child{border-right: none;}
+footer li a:link,footer li a:visited{ color:#fff;}
+footer li a:hover{color:#aaa;}
+.footer_text{width: 100%; height: 200px; margin: 0 auto;}
+.footer_logo{width: 300px; height: 100px; float: left; margin: 0 auto;}
+.footer_logo img{width: 100%; height: 100%;}
+.footer p{float: right;}
+}
+
+
+@media (min-width:1200px) {
+/* header */
+header{width: 100%; height: 50px; margin: 0 auto; background: #fff;}
+.game_logo{width: 180px; height:40px;float: left; margin: 0 auto; margin-top:5px; margin-left: 20px; }
+.game_logo img{width: 100%; height: 100%;}
+nav{width: 330px; height: 40px; float: right; margin: 0 auto; margin-top: 10px;  margin-right: 15px; text-align: center; font-size: 14px;}
+nav ul{width: 100%; height: 100%;}
+nav ul li{width: 33.3%; height: 100%; float: left;}
+nav ul li:nth-of-type(3) img{width:16px;}
+
+/* footer */
+footer{width: 100%; height: 300px; margin: 0 auto; color:#fff; background:#000; border-top: 1px solid #eee; font-size: 14px;}
+footer ul {width: 1200px; height: 30px; margin: 0 auto; margin-bottom: 40px; padding-top: 20px;}
+footer li{width: calc(100%/7); height: 100%; float: left; text-align: center; border-left: 1px solid #eee; border-right:  1px solid #eee; font-size: 14px;}
+footer li:first-of-type{border-left: none;}
+footer li:last-child{border-right: none;}
+footer li a:link,footer li a:visited{ color:#fff;}
+footer li a:hover{color:#aaa;}
+.footer_text{width: 1200px; height: 200px; margin: 0 auto;}
+.footer_logo{width: 300px; height: 100px; float: left; margin-left: 35px; margin-right: 100px;}
+.footer_logo img{width: 100%; height: 100%;}
+.footer p{float: right;}
+}

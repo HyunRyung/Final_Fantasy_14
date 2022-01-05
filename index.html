@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FINAL FANTASY</title>
+  <link rel="stylesheet" href="css/reset_css.css" type="text/css">
+  <link rel="stylesheet" href="css/common_css.css" type="text/css">
+  <link rel="stylesheet" href="css/main_css.css" type="text/css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+  <script>
+
+    $(function () {
+
+      
+      $(".menu_icon").click(function () {
+          $(".max599_menu").slideToggle();
+        });
+
+      $(window).resize(function(){
+          if(window.innerWidth<=600){
+          $(".max599_menu").css({"display":"none"});
+        }
+        });
+      
+
+
+      // menu
+      if (window.matchMedia("(min-width: 600px)").matches) { //뷰포트 600 이상
+        $(".game_start").mouseover(function () {
+          $(".main_button").stop().hide();
+          $(".hover_button").show();
+        });
+
+        $(".game_start").mouseout(function () {
+          $(".hover_button").stop().hide();
+          $(".main_button").show();
+        });
+
+        $('.menu_top>li,.menu_group').mouseover(function () {
+          $('.sub_menu').stop().slideDown();
+        }).mouseout(function () {
+          $('.sub_menu').stop().slideUp();
+        });
+        
+        $(".main_599").css({"display":"none"});
+
+
+      } else { // 뷰포트 599 이하 
+
+        $(".max599_menu>li").click(function () {
+          $(".max599_sub").not(this).stop().slideUp();
+          $(this).find(".max599_sub").stop().slideDown();
+        });
+
+        
+
+
+        $(".resistance .text_group span").prepend("<br>");
+
+        let img599 = 0;
+        function slideVer599() {
+          img599++;
+          if (img599 > $(".slide_599 li:last").index()) {
+            img599 = 0;
+          }
+          $(".slide_599 li").eq(img599).stop().fadeIn('slow');
+          $(".slide_599 li").eq(img599 - 1).stop().fadeOut('slow');
+        }
+        setInterval(slideVer599, 3000);
+      }
+
+      $(".plus1").click(function () {
+        $(".notice_599 li").stop().slideToggle();
+      });
+      $(".plus2").click(function () {
+        $(".update_599 li").stop().slideToggle();
+      });
+
+
+      // event slide
+
+      let slide_index = 0;
+      let slide_play = setInterval(event_slide_fun, 3000);
+
+      function event_slide_fun() {
+        slide_index++;
+        if (slide_index > $(".event_choice li:last").index()) {
+          slide_index = 0;
+        }
+        $(".event_slide li").eq(slide_index).stop().fadeIn('slow');
+        $(".event_slide li").eq(slide_index - 1).stop().fadeOut('slow');
+      }
+
+      $(".event_choice li").click(function () {
+        clearInterval(slide_play);
+        slide_index = $(this).index();
+        $(".event_slide li").stop().fadeOut('slow');
+        $(".event_slide li").eq(slide_index).stop().fadeIn('slow');
+        slide_play = setInterval(event_slide_fun, 3000);
+      });
+
+      $(".video_button").click(function () {
+        $(".trailer_cover").show();
+      });
+
+      $(".video_close").click(function () {
+        $(".trailer_cover").hide();
+      });
+
+
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="menu_icon"><img src="img/common/menu(gray).jpg" alt="menu_icon_img"></div>
+    <div class="game_logo"><a href="index.html"><img src="img/common/game_logo.jpg" alt="squeni_logo_img"></a></div>
+
+    <nav>
+      <ul>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#"><img src="img/common/cristal_shop_icon.jpg" alt="cristal_img"> 크리스탈 충전</a></li>
+      </ul>
+    </nav>
+
+
+    <!-- 뷰포트 600 이상 메뉴 -->
+    <div class="top_bar">
+      <ul class="menu_top">
+        <li>
+          <a href="#">새소식</a>
+          <ul class="top_sub">
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">업데이트 노트</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">게임소개</a>
+          <ul class="top_sub">
+            <li><a href="#">스토리</a></li>
+            <li><a href="#">종족</a></li>
+            <li><a href="Job_Guide.html">직업</a></li>
+            <li><a href="#">콘텐츠</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">EORZEA.Co</a>
+          <ul class="top_sub">
+            <li><a href="#">EORZEA TV</a></li>
+            <li><a href="#">GM노트</a></li>
+            <li><a href="#">추억의 일기장</a></li>
+            <li><a href="#">레터라이브 Q&A</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">커뮤니티</a>
+          <ul class="top_sub">
+            <li><a href="#">자유 게시판</a></li>
+            <li><a href="#">정보공유 게시판</a></li>
+            <li><a href="#">스크린샷 게시판</a></li>
+            <li><a href="#">팬아트 게시판</a></li>
+            <li><a href="#">모집 게시판</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">자료실</a>
+          <ul class="top_sub">
+            <li><a href="#">다운로드</a></li>
+            <li><a href="#">멀티미디어</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">고객센터</a>
+          <ul class="top_sub">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">문의하기</a></li>
+            <li><a href="#">U-OTP+</a></li>
+            <li><a href="#">IP관리</a></li>
+            <li><a href="#">게임해지</a></li>
+          </ul>
+        </li>
+
+        <li class="c_shop"><a href="#"><img src="img/common/cristal_shop_icon_bk.jpg" alt="c_shop_img">크리스탈샵</a></li>
+      </ul>
+
+      <div class="game_start">
+        <div class="main_button"><img src="img/main/game_start.jpg" alt="start_button"></div>
+        <div class="hover_button"><img src="img/main/game_start_hover.jpg" alt="hover_button"></div>
+      </div>
+    </div>
+
+    <div class="sub_menu">
+      <div class="menu_group">
+        <ul class="menu_sub1">
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">이벤트</a></li>
+          <li><a href="#">업데이트 노트</a></li>
+
+
+        </ul>
+
+        <ul class="menu_sub2">
+          <li><a href="#">스토리</a></li>
+          <li><a href="#">종족</a></li>
+          <li><a href="Job_Guide.html">직업</a></li>
+          <li><a href="#">콘텐츠</a></li>
+        </ul>
+
+        <ul class="menu_sub3">
+          <li><a href="#">EORZEA TV</a></li>
+          <li><a href="#">GM노트</a></li>
+          <li><a href="#">추억의 일기장</a></li>
+          <li><a href="#">레터라이브 Q&A</a></li>
+        </ul>
+
+        <ul class="menu_sub4">
+          <li><a href="#">자유 게시판</a></li>
+          <li><a href="#">정보공유 게시판</a></li>
+          <li><a href="#">스크린샷 게시판</a></li>
+          <li><a href="#">팬아트 게시판</a></li>
+          <li><a href="#">모집 게시판</a></li>
+        </ul>
+        <ul class="menu_sub5">
+          <li><a href="#">다운로드</a></li>
+          <li><a href="#">멀티미디어</a></li>
+        </ul>
+        <ul class="menu_sub6">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">문의하기</a></li>
+          <li><a href="#">U-OTP+</a></li>
+          <li><a href="#">IP관리</a></li>
+          <li><a href="#">게임해지</a></li>
+        </ul>
+        <ul class="menu_sub7">
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="trailer_cover">
+    <div class="trailer">
+      <video src="video/trailer.mp4" controls></video>
+      <div class="video_close"><img src="img/main/close.jpg" alt="close_icon"></div>
+    </div>
+  </div>
+
+  <!-- 뷰포트 599 이하 메뉴 -->
+  <ul class="max599_menu">
+    <li>
+      <p>새소식</p>
+      <ul class="max599_sub">
+        <li><a href="#">공지사항</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">업데이트 노트</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <p>게임소개</p>
+      <ul class="max599_sub">
+        <li><a href="#">스토리</a></li>
+        <li><a href="#">종족</a></li>
+        <li><a href="Job_Guide.html">직업</a></li>
+        <li><a href="#">콘텐츠</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <p>EORZEA.Co</p>
+      <ul class="max599_sub">
+        <li><a href="#">EORZEA TV</a></li>
+        <li><a href="#">GM노트</a></li>
+        <li><a href="#">추억의 일기장</a></li>
+        <li><a href="#">레터라이브 Q&A</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <p>커뮤니티</p>
+      <ul class="max599_sub">
+        <li><a href="#">자유 게시판</a></li>
+        <li><a href="#">정보공유 게시판</a></li>
+        <li><a href="#">스크린샷 게시판</a></li>
+        <li><a href="#">팬아트 게시판</a></li>
+        <li><a href="#">모집 게시판</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <p>자료실</p>
+      <ul class="max599_sub">
+        <li><a href="#">다운로드</a></li>
+        <li><a href="#">멀티미디어</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <p>고객센터</p>
+      <ul class="max599_sub">
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">문의하기</a></li>
+        <li><a href="#">U-OTP+</a></li>
+        <li><a href="#">IP관리</a></li>
+        <li><a href="#">게임해지</a></li>
+      </ul>
+    </li>
+  </ul>
+
+
+  <div class="main_content">
+    <div class="back_img"><img src="img/main/back.jpg" alt=""></div>
+    <div class="video_button">칠흑의 반역자 트레일러 영상 보기</div>
+    <div class="main_box">
+
+      <div class="event">
+        <ul class="event_slide">
+          <li class="ff14xsilver_img"><a href="#"><img src="img/main/silver.jpg" alt="ff14xsilver_img"></a></li>
+          <li class="aword_img"><a href="#"><img src="img/main/aword.jpg" alt="aword_img"></a></li>
+          <li class="60lv_img"><a href="#"><img src="img/main/60lv.jpg" alt="60lv_img"></a></li>
+          <li class="star_festival_img"><a href="#"><img src="img/main/star_festival.jpg" alt="star_fes"></a></li>
+          <li class="fan_fes_img"><a href="#"><img src="img/main/fanfes_event.jpg" alt="letter_live"></a></li>
+        </ul>
+      </div>
+
+
+
+      <div class="return">
+        <a href="#"><img src="img/main/return.jpg" alt="return_img"></a>
+      </div>
+
+      <div class="notice">
+        <h3>공지사항</h3>
+        <ul>
+          <li><a href="#">º 12.20(월) 레터라이브 특별편 방송 안내</a></li>
+          <li><a href="#">º 12.21(화) 점검 안내</a></li>
+          <li><a href="#">º 12.16(목) 임시 점검 완료 안내</a></li>
+          <li><a href="#">º 12.16(목) 임시 점검 안내</a></li>
+          <li><a href="#">º 일시적 오류 정상화 안내</a></li>
+          <li><a href="#">º 외부 시스템 문제로 인한 일시적 오류 안내</a></li>
+        </ul>
+      </div>
+
+      <div class="update_note">
+        <h3>업데이트 노트</h3>
+        <ul>
+          <li><a href="#">º 5.58 버전 패치노트</a></li>
+          <li><a href="#">º 5.55 버전 패치노트</a></li>
+          <li><a href="#">º 5.53 버전 패치노트</a></li>
+          <li><a href="#">º 5.5 크리스탈의 잔광 패치노트</a></li>
+          <li><a href="#">º 5.5 크리스탈의 잔광 패치 미리보기</a></li>
+          <li><a href="#">º 5.45 버전 패치노트</a></li>
+        </ul>
+      </div>
+      <ul class="event_choice">
+        <li>파이널판타지14 X 서은광 <br> 칠흑의 반역자 메인 테마 커버곡 출시</li>
+        <li>2021 에오르제아 어워드</li>
+        <li>무료 체험 레벨 확장!</li>
+        <li>2021 별빛 성탄제 </li>
+        <li>2022 팬페스티벌:서울 레터라이브 특별편</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 뷰포트 599 이하 메인 컨텐츠   -->
+
+  <div class="main_599">
+    <ul class="slide_599">
+      <li><a href="#"><img src="img/main/silver.jpg" alt="silver_599"></a></li>
+      <li><a href="#"><img src="img/main/aword.jpg" alt="aword_599"></a></li>
+      <li><a href="#"><img src="img/main/60lv.jpg" alt="60lv_599"></a></li>
+      <li><a href="#"><img src="img/main/star_festival.jpg" alt="star_599"></a></li>
+      <li><a href="#"><img src="img/main/fanfes_event.jpg" alt="fan_fes_599"></a></li>
+    </ul>
+  </div>
+
+  <div class="notice_599">
+    <div class="notice_599_top">
+      <h3>&nbsp;&nbsp;공지사항<div class="plus1" id="plus">+</div>
+      </h3>
+    </div>
+    <ul>
+      <li><a href="#">&nbsp;&nbsp;  12.20(월) 레터라이브 특별편 방송 안내</a></li>
+      <li><a href="#">&nbsp;&nbsp;  12.21(화) 점검 안내</a></li>
+      <li><a href="#">&nbsp;&nbsp;  12.16(목) 임시 점검 완료 안내</a></li>
+      <li><a href="#">&nbsp;&nbsp;  12.16(목) 임시 점검 안내</a></li>
+      <li><a href="#">&nbsp;&nbsp;  일시적 오류 정상화 안내</a></li>
+      <li><a href="#">&nbsp;&nbsp;  외부 시스템 문제로 인한 일시적 오류 안내</a></li>
+    </ul>
+  </div>
+
+  <div class="update_599">
+    <div class="update_599_top">
+      <h3>&nbsp;&nbsp;업데이트 노트<div class="plus2" id="plus">+</div>
+      </h3>
+    </div>
+    <ul>
+      <li><a href="#">&nbsp;&nbsp; º 5.58 버전 패치노트</a></li>
+      <li><a href="#">&nbsp;&nbsp; º 5.55 버전 패치노트</a></li>
+      <li><a href="#">&nbsp;&nbsp; º 5.53 버전 패치노트</a></li>
+      <li><a href="#">&nbsp;&nbsp; º 5.5 크리스탈의 잔광 패치노트</a></li>
+      <li><a href="#">&nbsp;&nbsp; º 5.5 크리스탈의 잔광 패치 미리보기</a></li>
+      <li><a href="#">&nbsp;&nbsp; º 5.45 버전 패치노트</a></li>
+    </ul>
+  </div>
+
+  <div class="news_599">
+    <input type="radio" name="pos" id="pos1" checked>
+    <input type="radio" name="pos" id="pos2">
+    <input type="radio" name="pos" id="pos3">
+
+    <ul class="news_slide">
+
+      <li>
+        <h3>패치노트</h3>
+        <a href="#">
+          <div class="slide_img1"></div> <br>
+          <p>파이널판타지 14 대규모 업데이트 ! <br> 신규 확장팩 '칠흑의 반역자' 알아보기</p>
+        </a>
+      </li>
+
+      <li>
+        <h3>크리스탈 샵</h3>
+        <a href="#">
+          <div class="slide_img2"></div><br>
+          <div class="cristal_text"><span>별빛축제 기념 초코보 갑주!</span>
+            <h2>성인의 수행원 갑주</h2>
+            <p><img src="img/common/cristal_shop_icon.jpg" alt="c_shop_icon"><span>9,900</span></p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <h3>GM노트</h3>
+        <a href="#">
+          <div class="slide_img3"></div><br>
+          <p>GM 노트 157화 ! <br> GM 양파기사의 특별한 동물 의상 소개 !</p>
+        </a>
+      </li>
+    </ul>
+    <p class="slide_button">
+      <label for="pos1">1</label>
+      <label for="pos2">2</label>
+      <label for="pos3">3</label>
+    </p>
+  </div>
+
+
+  <div class="h3_group">
+    <h3>패치노트</h3>
+    <h3>크리스탈 샵</h3>
+    <h3>GM노트</h3>
+  </div>
+
+  <div class="news">
+
+    <div class="patch_note">
+
+      <a href="#"><img src="img/main/shadow.jpg" alt="5_0_img">
+        <div class="patch_text">파이널판타지 14 대규모 업데이트 ! <br><br> 신규 확장팩 '칠흑의 반역자' 알아보기</div>
+      </a>
+    </div>
+
+
+    <div class="cristal">
+
+      <a href="#">
+        <div class="cristal_img">
+          <img src="img/main/cristal_shop.jpg" alt="cristal_product_img">
+        </div>
+        <div class="cristal_text"><span>별빛축제 기념 초코보 갑주!</span>
+          <h2>성인의 수행원 갑주</h2>
+          <p><img src="img/common/cristal_shop_icon.jpg" alt="c_shop_icon"><span>9,900</span></p>
+        </div>
+      </a>
+    </div>
+
+    <div class="gm_note">
+
+      <a href="#">
+        <div class="gm_img"><img src="img/main/gm_note.jpg" alt="GM_note_img"></div>
+        <div class="gm_text">
+          <p>GM 노트 157화 ! <br> GM 양파기사의 특별한 동물 의상 소개 !</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+  <div class="fan_art_cover">
+    <div class="fan_art">
+      <h3>팬아트 BEST</h3>
+      <div class="fan_art_place"><a href="#"><img src="img/main/fan_art1.jpg" alt="fan_art1"></a></div>
+      <div class="fan_art_place"><a href="#"><img src="img/main/fan_art2.jpg" alt="fan_art2"></a></div>
+      <div class="fan_art_place"><a href="#"><img src="img/main/fan_art3.jpg" alt="fan_art3"></a></div>
+      <div class="fan_art_place"><a href="#"><img src="img/main/fan_art4.jpg" alt="fan_art4"></a></div>
+      <div class="fan_art_place"><a href="#"><img src="img/main/fan_art5.jpg" alt="fan_art5"></a></div>
+      <div class="fan_art_place"><a href="#"><img src="img/main/fan_art6.jpg" alt="fan_art6"></a></div>
+      <div class="fan_art_place"><a href="#"><img src="img/main/fan_art7.jpg" alt="fan_art7"></a></div>
+      <div class="fan_art_place"><a href="#"><img src="img/main/fan_art8.jpg" alt="fan_art8"></a></div>
+    </div>
+  </div>
+  <div class="guide">
+
+    <h3>게임 가이드</h3>
+
+    <div class="tag_group">
+      <a href="#">
+        <div class="mini_tag">#직업</div>
+      </a>
+      <a href="#">
+        <div class="mini_tag">#퀘스트</div>
+      </a>
+      <a href="#">
+        <div class="mini_tag">#업적</div>
+      </a>
+      <a href="#">
+        <div class="mini_tag">#제작</div>
+      </a>
+      <a href="#">
+        <div class="mini_tag">#풍맥</div>
+      </a>
+    </div>
+
+    <div class="img_group">
+      <div class="guide_img"><a href="#"><img src="img/main/beginner.jpg" alt="beginner_guide">
+          <div class="guide_text">초보자 가이드</div>
+        </a></div>
+      <div class="guide_img"><a href="#"><img src="img/main/wind.jpg" alt="aether_guide">
+          <div class="guide_text">풍맥 가이드</div>
+        </a></div>
+      <div class="guide_img"><a href="Job_Guide.html"><img src="img/main/job.jpg" alt="job_guide">
+          <div class="guide_text">직업 가이드</div>
+        </a></div>
+      <div class="guide_img"><a href="#"><img src="img/main/pvp.jpg" alt="pvp_guide">
+          <div class="guide_text">PvP 가이드</div>
+        </a></div>
+    </div>
+  </div>
+
+  <h3 class="e_n">EORZEA.News</h3>
+  <div class="eorzea">
+    <div class="ff14xsilver"><a href="#"><img src="img/main/sliver2.jpg" alt="ff14xsilver_img2">
+        <div class="text_group">파이널판타지14 X 서은광 콜라보레이션 <br> 서은광의 에오르제아 방문기</BR></div>
+      </a></div>
+    <div class="fan_fes"><a href="#"><img src="img/main/fan_festival.jpg" alt="fan_festival_img">
+        <div class="text_group">2022 디지털 팬페스티벌 서울 안내</div>
+      </a></div>
+    <div class="resistance"><a href="#"><img src="img/main/save_the_queen.jpg" alt="save_the_queen_img">
+        <div class="text_group">
+          <h4>세이브 더 퀸 : <span>남부 보즈야 전선</span></h4>고대 군힐드 제국의 전설. <span>레지스탕스 웨폰</span>
+        </div>
+      </a></div>
+    <div class="goods"><a href="#"><img src="img/main/goods.jpg" alt="goods_img">
+        <div class="text_group">꼬마 친구 뚱냥이를 실제로 ! <br>파이널판타지14 굿즈 스토어</div>
+      </a></div>
+  </div>
+
+  <footer>
+
+    <ul>
+
+      <li><a href="#">회사소개</a></li>
+      <li><a href="#">이용약관</a></li>
+      <li><a href="#">게임이용등급</a></li>
+      <li><a href="#">개인정보처리방침</a></li>
+      <li><a href="#">운영정책</a></li>
+      <li><a href="#">청소년보호정책</a></li>
+      <li><a href="#">게임시간선택제</a></li>
+
+    </ul>
+    <div class="footer_text">
+      <div class="footer_logo"><img src="img/common/logo(black).jpeg" alt="squeni_logo_img_footer"></div>
+      <p>
+        (주)액토즈소프트 | 서울시 강남구 테헤란로 44길 8 아이콘 역삼(ICON Yeoksam) 11F~15F | ㉾ 06210 | Tel 1800-9602 <br> Fax 02-732-8621 |
+        Email
+        FFXIV@actoz.com <br>
+        사업자등록번호 201-81-55470 | 통신판매업신고 제 2018-서울강남-03265 | 대표이사 GUO HAIBIN 사업자정보확인 <br>
+        © 2010 - 2021 SQUARE ENIX CO., LTD. All Rights Reserved. Published in Korea by Actoz Soft CO., LTD.
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
