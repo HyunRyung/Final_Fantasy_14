@@ -1,19 +1,38 @@
 @media (min-width:1200px) {
-  /* Job_list */
-  .job_list{width: 100%; height: 50px; background: #000; color:#aaa;}
-  .act_list{width:50%; height: 100%; line-height: 50px; margin: 0 auto; display: flex; justify-content: center; align-content: center; align-items: center; text-align: center;}
-  .act_list li{width: 20%; height: 100%; float: left; }
-  .act_list>li:hover{border-bottom: 3px solid #367df3; transition: 1s; color:#fff; cursor: pointer;}
-  .class_list{width: 100%; height: auto; display: none; position: relative; z-index: 99;}
-  .class_list li{width: 100%; height: auto; line-height: 50px; background: #000; font-size: 14px;}
-  .class_list li a{color:#aaa;}
-  .class_list li a:hover{color:#fff;}
+header{border-bottom: 1px solid #eee;}
+footer{border-top:1px solid #666; float: left;}
+/* guide_bar */
+.guide_bar{width: 20%; height: calc(100vh - 50px); background:#000; color:#BD9D7C; float: left;}
+.bar_logo{width: 100%; height: 20%; margin-bottom: 10%;}
+.bar_logo img{width: 100%; height: 100%;}
+.guide_list{width: 100%; cursor:pointer;} 
+.guide_list li{width: 100%; margin: 0 auto; border-top: 1px solid #666; line-height: 40px; position: relative; }
+.guide_list li:nth-of-type(6){border-bottom: 1px solid #666;}
+.guide_sub{display: none;}
+.guide_sub li{ padding-left: 40px;}
+.guide_sub li:hover{background:#fff; color:#000;}
 
-  /* job_move */
-  .job_move{width: 100vw; height: 450px; background: #000; position: relative;}
-  .gif_move{width: 1200px; height: 100%; margin: 0 auto; position: absolute; top: 0; left: 0; right:0;}
-  .icon_img{width: 450px; height: 100%; margin: 0 auto; display: none; position: absolute; left: 0; right: 0;}
-  .icom_img img{width: 100%; height: 100%; }
+/* guide_content */
+.guide_content{width: 80%; height: calc(100vh - 50px); float: right;}
+.content{width: 80%; height: 100%; padding: 50px 0 0 50px;}
 
-  /* job_skill */
+.content_title{width: 100%; height: 10%; border-bottom: 1px solid #ccc; margin-bottom: 50px;}
+.content input{width: 470px; height: 50px; border:1px solid #999; float: right;}
+.content input:focus{outline: 1px solid #999;}
+
+/* content_list */
+.content_list{width: 100%; height: 50%;}
+.content_list h2{color:#555; margin-bottom: 30px;}
+
+.list_place{width: 95%; height: 85%; border: 1px solid #ccc; margin: 0 auto;} 
+
+.list_guide{width: 40%; height: 100%;float:left}
+.list_guide li{width: 100%; height: 25%; border-bottom: 1px solid #999;}
+.list_guide li:nth-of-type(4){border:none}
+.list_img{width: 60%; height: 100%; overflow: hidden; float:right}
+.list_img li{width: 100%; height: 100%;}
+.list_img li:not(:first){display: none}
+.list_img img{width: 100%; height: 100%;}
+
+
 }

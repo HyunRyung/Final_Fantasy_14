@@ -75,14 +75,14 @@ nav ul li{width: 33.3%; height: 100%; float: left;}
 nav ul li:nth-of-type(3) img{width:16px;}
 
 /* footer */
-footer{width: 100%; height: 300px; margin: 0 auto; color:#fff; background:#000; border-top: 1px solid #eee; font-size: 14px;}
+footer{width: 100%; height: 200px; margin: 0 auto; color:#fff; background:#000; border-top: 1px solid #eee; font-size: 14px;}
 footer ul {width: 1200px; height: 30px; margin: 0 auto; margin-bottom: 40px; padding-top: 20px;}
 footer li{width: calc(100%/7); height: 100%; float: left; text-align: center; border-left: 1px solid #eee; border-right:  1px solid #eee; font-size: 14px;}
 footer li:first-of-type{border-left: none;}
 footer li:last-child{border-right: none;}
 footer li a:link,footer li a:visited{ color:#fff;}
 footer li a:hover{color:#aaa;}
-.footer_text{width: 1200px; height: 200px; margin: 0 auto;}
+.footer_text{width: 1200px; height: 100px; margin: 0 auto;}
 .footer_logo{width: 300px; height: 100px; float: left; margin-left: 35px; margin-right: 100px;}
 .footer_logo img{width: 100%; height: 100%;}
 .footer p{float: right;}

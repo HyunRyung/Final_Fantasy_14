@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset_css.css" type="text/css">
+  <link rel="stylesheet" href="css/common_css.css" type="text/css">
+  <link rel="stylesheet" href="css/sub_css.css" type="text/css">
+
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+  <script>
+    $(function(){
+      $(".guide_list li").click(function(){
+        $(".guide_sub").stop().slideUp();
+        $(this).find(".guide_sub").stop().slideDown();
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="game_logo"><a href="index.html"><img src="img/common/game_logo.jpg" alt="squeni_logo_img"></a></div>
+    <nav>
+      <ul>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#"><img src="img/common/cristal_shop_icon.jpg" alt="cristal_img"> 크리스탈 충전</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="guide_bar">
+    <div class="bar_logo"><a href="index.html"><img src="img/main/back.jpg" alt="bar_logo"></a></div>
+    <ul class="guide_list">
+      <li>
+        공식 가이드
+        <ul class="guide_sub">
+          <li>아이템</li>
+          <li>퀘스트</li>
+          <li>임무</li>
+          <li>업적</li>
+          <li>제작 수첩</li>
+          <li>채집 수첩</li>
+          <li>상점</li>
+          <li>명령어</li>
+        </ul>
+      </li>
+      <li>
+        플레이 가이드
+        <ul class="guide_sub">
+          <li>초보자 가이드</li>
+          <li>전투&육성</li>
+          <li>주요 시스템</li>
+          <li>커뮤니티 편의</li>
+          <li>기타</li>
+        </ul>
+      </li>
+      <li>
+        직업 가이드
+        <ul class="guide_sub">
+          <li>방어</li>
+          <li>회복</li>
+          <li>근거리 공격</li>
+          <li>원거리 물리 공격</li>
+          <li>원거리 마법 공격</li>
+        </ul>
+      </li>
+      <li>
+        PvP 가이드
+        <ul class="guide_sub">
+          <li>PvP 규칙 및 시스템</li>
+          <li>PvP 직업 가이드</li>
+          <li>늑대우리</li>
+          <li>전장</li>
+          <li>경쟁의 날개</li>
+          <li>더 피스트 랭킹</li>
+        </ul>
+      </li>
+      <li>
+        생활 컨텐츠 가이드
+        <ul class="guide_sub">
+          <li>제작 컨텐츠</li>
+          <li>채집 컨텐츠</li>
+        </ul>
+      </li>
+      <li>
+        풍맥 가이드
+        <ul class="guide_sub">
+          <li>창천의 이슈가르드</li>
+          <li>홍련의 해방자</li>
+          <li>칠흑의 반역자</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="guide_content">
+
+    <div class="content">
+
+      <h1 class="content_title">게임 가이드<input type="text" placeholder="검색어를 입력해주세요."></h1>
+
+      <div class="content_list">
+        <h2 class="list_title">추천 가이드</h2>
+
+        <div class="list_place">
+
+          <ul class="list_guide">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+
+          <ul class="list_img">
+            <li><img src="img/sub/list_guide_img/bnw_secret.jpg" alt="bnw_secret_img"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <footer>
+
+    <ul>
+
+      <li><a href="#">회사소개</a></li>
+      <li><a href="#">이용약관</a></li>
+      <li><a href="#">게임이용등급</a></li>
+      <li><a href="#">개인정보처리방침</a></li>
+      <li><a href="#">운영정책</a></li>
+      <li><a href="#">청소년보호정책</a></li>
+      <li><a href="#">게임시간선택제</a></li>
+
+    </ul>
+    <div class="footer_text">
+      <div class="footer_logo"><img src="img/common/logo(black).jpeg" alt="squeni_logo_img_footer"></div>
+      <p>
+        (주)액토즈소프트 | 서울시 강남구 테헤란로 44길 8 아이콘 역삼(ICON Yeoksam) 11F~15F | ㉾ 06210 | Tel 1800-9602 <br> Fax 02-732-8621 |
+        Email
+        FFXIV@actoz.com <br>
+        사업자등록번호 201-81-55470 | 통신판매업신고 제 2018-서울강남-03265 | 대표이사 GUO HAIBIN 사업자정보확인 <br>
+        © 2010 - 2021 SQUARE ENIX CO., LTD. All Rights Reserved. Published in Korea by Actoz Soft CO., LTD.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
