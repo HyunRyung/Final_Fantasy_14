@@ -2,11 +2,11 @@
 header{border-bottom: 1px solid #eee;}
 footer{border-top:1px solid #666; float: left;}
 /* guide_bar */
-.guide_bar{width: 20%; height: calc(100vh - 50px); background:#000; color:#BD9D7C; float: left;}
+.guide_bar{width: 20%; height: calc(130vh - 50px); background:#000; color:#BD9D7C; float: left;}
 .bar_logo{width: 100%; height: 20%; margin-bottom: 10%;}
 .bar_logo img{width: 100%; height: 100%;}
 .guide_list{width: 100%; cursor:pointer;} 
-.guide_list li{width: 100%; margin: 0 auto; border-top: 1px solid #666; line-height: 40px; position: relative; }
+.guide_list li{width: 100%; margin: 0 auto; border-top: 1px solid #666; line-height: 40px;}
 .guide_list li:nth-of-type(6){border-bottom: 1px solid #666;}
 .guide_sub{display: none;}
 .guide_sub li{ padding-left: 40px;}
@@ -24,7 +24,7 @@ footer{border-top:1px solid #666; float: left;}
 .content_list{width: 100%; height: 50%;}
 .content_list h2{color:#555; margin-bottom: 30px;}
 
-.list_place{width: 95%; height: 85%; border: 1px solid #ccc; margin: 0 auto;} 
+.list_place{width: 90%; height: 85%; border: 1px solid #ccc; margin: 0 auto;} 
 
 .list_guide{width: 40%; height: 100%;float:left}
 .list_guide li{width: 100%; height: 25%; border-bottom: 1px solid #999;}
