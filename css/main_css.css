@@ -1,5 +1,7 @@
 .menu_icon{display: none;}
 
+
+
 @media (max-width:599px) {
   header{width:100% ;height: 50px;}
   .menu_icon{width: 45px; height: 45px; display: block; float:left; cursor: pointer;}
@@ -33,7 +35,7 @@
   /* notice & update*/
   .notice_599{width: 100%; height: auto; list-style: circle;}
   .notice_599_top{width: 100%; height: 30px; background: #eee; border: 1px solid #ddd; line-height: 30px;}
-  #plus{width:25px; height: 100%; float: right; text-align: center; border:3px solid #ccc; font-weight: bold; line-height: 20px; cursor: pointer;}
+  #plus{width:25px; height: 100%; float: right; text-align: center; border:1px solid #ccc; font-weight: bold; line-height: 20px; cursor: pointer;}
   .notice_599 li{width: 100%; height: auto; border:1px solid #eee; border-bottom: none; font-size: 14px;}
   .notice_599 li:hover a{text-decoration: underline 1px #ccc solid;}
   .notice_599 li:last-of-type{border-bottom: 1px solid #eee;}
@@ -112,10 +114,10 @@
   header{width:100% ;height: 50px; position:fixed; top: 0; z-index: 97;}
 
   /* video */
-  .trailer_cover{width: 100%; height: 100%; background: rgba(0,0,0,0.7);display:none; z-index: 98; overflow: hidden; position:fixed;}
-  .trailer{width: 100%; height:100%; margin: 0 auto; position: fixed;}
-  .trailer video{width: 100%; height: 100%;}
-  .video_close{width: 30px; height: 30px; position: absolute; top: 0; right: 0; cursor: pointer;}
+  .trailer_cover{width: 100vw; height: 100vh; background: rgba(0,0,0,0.7);display:none; z-index: 98; overflow: hidden; position:fixed; left: 0; right:0;}
+  .trailer{width: 85%; height:85%; margin: 0 auto; position:relative; top: 10%; left: 7%;}
+  .trailer iframe{width: 80%; height: 80%; border:none}
+  .video_close{width: 30px; height: 30px; position: absolute; top: 0; right: 10%; cursor: pointer;}
   .video_close img{width: 100%;height: 100%;}
   /* main_content */
   .max599_menu{display: none;}
@@ -243,10 +245,10 @@
 header{width:100% ;height: 50px; position:fixed; top: 0; z-index: 97;}
 
 /* video */
-.trailer_cover{width: 100%; height: 100%; background: rgba(0,0,0,0.7);display:none; z-index: 98; overflow: hidden; position:fixed;}
-.trailer{width: 1550px; height:900px; margin: 0 auto; position: fixed; left:10%;}
-.trailer video{width: 1500px; height: 800px;}
-.video_close{width: 30px; height: 30px; position: absolute; top: 0; right: 0; cursor: pointer;}
+.trailer_cover{width: 100vw; height: 100vh; background: rgba(0,0,0,0.7);display:none; z-index: 98; overflow: hidden; position:fixed; left: 0; right:0;}
+.trailer{width: 80%; height: 80%; margin: 0 auto; position:relative; top: 10%; left: 7%;}
+.trailer iframe{width: 80%; height: 80%; border: none;}
+.video_close{width: 30px; height: 30px; position: absolute; top: -5%; right: 15%; cursor: pointer;}
 .video_close img{width: 100%;height: 100%;}
 /* main_content */
 .main_content{width: 100%; height: 1500px; position: relative; margin: 100px 0 150px 0 ; background: #000; }
@@ -362,3 +364,7 @@ header{width:100% ;height: 50px; position:fixed; top: 0; z-index: 97;}
 .fan_fes .text_group{height: 15%; padding-top: 10px; bottom: -1%;}
 .goods .text_group,.resistance .text_group{font-size: 13px; padding-top: 10px;}
 }
+
+
+.sub_link a:visited{color:red!important;}
+.sub_link a{color: red !important;}

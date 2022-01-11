@@ -19,13 +19,19 @@
           $(".max599_menu").slideToggle();
         });
 
-      $(window).resize(function(){
-          if(window.innerWidth<=600){
-          $(".max599_menu").css({"display":"none"});
-        }
-        });
-      
+      $(window).resize(function () {
+        if (window.innerWidth<=599) {
+          $(".max599_menu").css({ "display": "none" });
+          let video_save = $(".trailer").detach();
+          $(".trailer_cover").append(video_save)
+          $(".trailer_cover").hide();
 
+        }else{
+          
+        }
+      });
+
+      
 
       // menu
       if (window.matchMedia("(min-width: 600px)").matches) { //뷰포트 600 이상
@@ -104,9 +110,12 @@
 
       $(".video_button").click(function () {
         $(".trailer_cover").show();
+        $(".trailer_cover").append(video_save);
+
       });
 
       $(".video_close").click(function () {
+        video_save = $(".trailer").detach();
         $(".trailer_cover").hide();
       });
 
@@ -216,7 +225,7 @@
         <ul class="menu_sub2">
           <li><a href="#">스토리</a></li>
           <li><a href="#">종족</a></li>
-          <li><a href="Guide.html">직업</a></li>
+          <li class="sub_link"><a href="Guide.html">직업</a></li>
           <li><a href="#">콘텐츠</a></li>
         </ul>
 
@@ -253,11 +262,11 @@
 
   <div class="trailer_cover">
     <div class="trailer">
-      <video src="video/trailer.mp4" controls></video>
+      <iframe class="iframe_1" src="video/trailer.mp4" controls></iframe>
       <div class="video_close"><img src="img/main/close.jpg" alt="close_icon"></div>
     </div>
   </div>
-
+  
   <!-- 뷰포트 599 이하 메뉴 -->
   <ul class="max599_menu">
     <li>

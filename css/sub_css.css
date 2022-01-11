@@ -38,21 +38,28 @@ h2{color: #555; margin-bottom: 30px;}
 
 /* job_video */
 .job_video{width: 100%; height: 40%; display: flex; justify-content: space-around}
-.video_place{width: 35%; height: 100%; border: 1px #000 solid; float: left;}
-.icon_place{width: 50%; height: 100%; border: 1px #000 solid; float: right; }
+.video_place{width: 55%; height: 100%; border: 1px #000 solid; float: left;}
+.icon_place{width: 45%; height: 100%; float: right; font-size: 14px;}
+.icon_place li{cursor: pointer;}
 
+.video_list video{width: 100%; height: 100%;}
 .video_list li:not(:first-of-type){display: none;}
 
-.icon_list_t{width: 100%; height: 23%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap;}
+.icon_list_t{width: 100%; height: 20%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap;}
 .icon_list_t li{width: 80px; height: 80px; line-height: 20px; text-align: center;}
 .icon_list_t li img{width: 50px; height: 50px;}
 
-.icon_list_h{width: 100%; height: 23%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap;}
+.icon_list_h{width: 100%; height: 20%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap;}
 .icon_list_h li{width: 80px; height: 80px; line-height: 20px; text-align: center;}
 .icon_list_h li img{width: 50px; height: 50px;}
 
-.icon_list_p{width: 100%; height: 23%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap;}
-.icon_list_p li{width: 80px; height: 80px; line-height: 20px; text-align: center;}
-.icon_list_p li img{width: 50px; height: 50px;}
+.icon_list_d1{width: 100%; height: 25%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap;}
+.icon_list_d1 li{width: 80px; height: 80px; line-height: 20px; text-align: center;}
+.icon_list_d1 li img{width: 50px; height: 50px;}
+
+.icon_list_d2{width: 100%; height: 25%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap;}
+.icon_list_d2 li{width: 80px; height: 80px; line-height: 20px; text-align: center;}
+.icon_list_d2 li img{width: 50px; height: 50px;}
+
 
 }
