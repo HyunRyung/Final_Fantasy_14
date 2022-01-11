@@ -28,17 +28,48 @@
         
       });
 
+
+
+      function video_detach(){
+        pld_detach = $(".pld_mp4").detach();
+        war_detach = $(".war_mp4").detach();
+        drk_detach = $(".drk_mp4").detach();
+        gnb_detach = $(".gnb_mp4").detach();
+        whm_detach = $(".whm_mp4").detach();
+        sch_detach = $(".sch_mp4").detach();
+        ast_detach = $(".ast_mp4").detach();
+        drg_detach = $(".drg_mp4").detach();
+        mnk_detach = $(".mnk_mp4").detach();
+        nin_detach = $(".nin_mp4").detach();
+        sam_detach = $(".sam_mp4").detach();
+        brd_detach = $(".brd_mp4").detach();
+        mch_detach = $(".mch_mp4").detach();
+        dnc_detach = $(".dnc_mp4").detach();
+        blm_detach = $(".blm_mp4").detach();
+        smn_detach = $(".smn_mp4").detach();
+        rmd_detach = $(".rmd_mp4").detach();
+      }
+
+
+
+
+
+
       $(".pld_icon").click(function(){
-        
-        job_video_save = $(".video_list li").not(".pld_mp4").detach();
+        video_detach();
+        $(".video_list").append(pld_detach);
+        $(".video_list li").not(this).hide();
         $(".pld_mp4").show();
-        setTimeout(3000)= $(".video_list").append(job_video_save);
+        
+
       });
 
       $(".war_icon").click(function(){
-        job_video_save = $(".video_list li").not(".war_mp4").detach();
+        video_detach();
+        $(".video_list").append(war_detach);
+        $(".video_list li").not(this).hide();
         $(".war_mp4").show();
-        setTimeout(3000)= $(".video_list").append(job_video_save);
+
       })
 
     });
