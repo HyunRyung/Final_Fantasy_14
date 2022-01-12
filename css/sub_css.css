@@ -39,7 +39,7 @@ h2{color: #555; margin-bottom: 30px;}
 /* job_video */
 .job_video{width: 100%; height: 40%; display: flex; justify-content: space-around;}
 .video_place{width: 55%; height: 100%; float: left;}
-.icon_place{width: 45%; height: 100%; float: right; font-size: 14px;}
+.icon_place{width: 45%; height: 100%; float: right; font-size: 14px; padding-top: 10px;}
 .icon_place li{cursor: pointer;}
 
 .video_list video{width: 100%; height: 100%;}
