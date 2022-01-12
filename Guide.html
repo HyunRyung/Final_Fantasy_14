@@ -30,7 +30,6 @@
 
 
 
-      function video_detach(){
         pld_detach = $(".pld_mp4").detach();
         war_detach = $(".war_mp4").detach();
         drk_detach = $(".drk_mp4").detach();
@@ -47,30 +46,135 @@
         dnc_detach = $(".dnc_mp4").detach();
         blm_detach = $(".blm_mp4").detach();
         smn_detach = $(".smn_mp4").detach();
-        rmd_detach = $(".rmd_mp4").detach();
-      }
+        rdm_detach = $(".rdm_mp4").detach();
 
+      $(".video_list").append(pld_detach);
 
 
 
 
 
       $(".pld_icon").click(function(){
-        video_detach();
         $(".video_list").append(pld_detach);
-        $(".video_list li").not(this).hide();
+        $(".video_list li").not(".pld_mp4").detach().hide();
         $(".pld_mp4").show();
-        
 
       });
 
       $(".war_icon").click(function(){
-        video_detach();
         $(".video_list").append(war_detach);
-        $(".video_list li").not(this).hide();
+        $(".video_list li").not(".war_mp4").detach().hide();
         $(".war_mp4").show();
 
-      })
+      });
+
+      $(".drk_icon").click(function(){
+        $(".video_list").append(drk_detach);
+        $(".video_list li").not(".drk_mp4").detach().hide();
+        $(".drk_mp4").show();
+
+      });
+
+      $(".gnb_icon").click(function(){
+        $(".video_list").append(gnb_detach);
+        $(".video_list li").not(".gnb_mp4").detach().hide();
+        $(".gnb_mp4").show();
+
+      });
+
+      $(".whm_icon").click(function(){
+        $(".video_list").append(whm_detach);
+        $(".video_list li").not(".whm_mp4").detach().hide();
+        $(".whm_mp4").show();
+
+      });
+
+      $(".sch_icon").click(function(){
+        $(".video_list").append(sch_detach);
+        $(".video_list li").not(".sch_mp4").detach().hide();
+        $(".sch_mp4").show();
+
+      });
+
+      $(".ast_icon").click(function(){
+        $(".video_list").append(ast_detach);
+        $(".video_list li").not(".ast_mp4").detach().hide();
+        $(".ast_mp4").show();
+
+      });
+
+      $(".drg_icon").click(function(){
+        $(".video_list").append(drg_detach);
+        $(".video_list li").not(".drg_mp4").detach().hide();
+        $(".drg_mp4").show();
+
+      });
+
+      $(".mnk_icon").click(function(){
+        $(".video_list").append(mnk_detach);
+        $(".video_list li").not(".mnk_mp4").detach().hide();
+        $(".mnk_mp4").show();
+
+      });
+
+      $(".nin_icon").click(function(){
+        $(".video_list").append(nin_detach);
+        $(".video_list li").not(".nin_mp4").detach().hide();
+        $(".nin_mp4").show();
+
+      });
+
+      $(".sam_icon").click(function(){
+        $(".video_list").append(sam_detach);
+        $(".video_list li").not(".sam_mp4").detach().hide();
+        $(".sam_mp4").show();
+
+      });
+
+      $(".brd_icon").click(function(){
+        $(".video_list").append(brd_detach);
+        $(".video_list li").not(".brd_mp4").detach().hide();
+        $(".brd_mp4").show();
+
+      });
+
+      $(".mch_icon").click(function(){
+        $(".video_list").append(mch_detach);
+        $(".video_list li").not(".mch_mp4").detach().hide();
+        $(".mch_mp4").show();
+
+      });
+
+      $(".dnc_icon").click(function(){
+        $(".video_list").append(dnc_detach);
+        $(".video_list li").not(".dnc_mp4").detach().hide();
+        $(".dnc_mp4").show();
+
+      });
+
+      $(".blm_icon").click(function(){
+        $(".video_list").append(blm_detach);
+        $(".video_list li").not(".blm_mp4").detach().hide();
+        $(".blm_mp4").show();
+
+      });
+
+      $(".smn_icon").click(function(){
+        $(".video_list").append(smn_detach);
+        $(".video_list li").not(".smn_mp4").detach().hide();
+        $(".smn_mp4").show();
+
+      });
+
+      $(".rdm_icon").click(function(){
+        $(".video_list").append(rdm_detach);
+        $(".video_list li").not(".rdm_mp4").detach().hide();
+        $(".rdm_mp4").show();
+
+      });
+
+
+
 
     });
 
@@ -194,21 +298,21 @@
             <ul class="video_list">
               <li class="pld_mp4"><video src="video/endwalker_trailer low-size/Paladin.mp4"  controls></video></li>
               <li class="war_mp4"><video src="video/endwalker_trailer low-size/Warrior.mp4" controls></video></li>
-              <li class="drk_mp4"><video src="video/endwalker_trailer low-size/Dark_knight.mp4"></video></li>
-              <li class="gnb_mp4"><video src="video/endwalker_trailer low-size/Gunbreaker.mp4"></video></li>
-              <li class="whm_mp4"><video src="video/endwalker_trailer low-size/White_mage.mp4"></video></li>
-              <li class="sch_mp4"><video src="video/endwalker_trailer low-size/Scholar.mp4"></video></li>
-              <li class="ast_mp4"><video src="video/endwalker_trailer low-size/Astrologian.mp4"></video></li>
-              <li class="drg_mp4"><video src="video/endwalker_trailer low-size/Dragoon.mp4"></video></li>
-              <li class="mnk_mp4"><video src="video/endwalker_trailer low-size/Monk.mp4"></video></li>
-              <li class="nin_mp4"><video src="video/endwalker_trailer low-size/Ninja.mp4"></video></li>
-              <li class="sam_mp4"><video src="video/endwalker_trailer low-size/Samurai.mp4"></video></li>
-              <li class="brd_mp4"><video src="video/endwalker_trailer low-size/Bard.mp4"></video></li>
-              <li class="mch_mp4"><video src="video/endwalker_trailer low-size/Machinist.mp4"></video></li>
-              <li class="dnc_mp4"><video src="video/endwalker_trailer low-size/Dancer.mp4"></video></li>
-              <li class="blm_mp4"><video src="video/endwalker_trailer low-size/Black_mage.mp4"></video></li>
-              <li class="snm_mp4"><video src="video/endwalker_trailer low-size/Summoner.mp4"></video></li>
-              <li class="rdm_mp4"><video src="video/endwalker_trailer low-size/Red_mage.mp4"></video></li>
+              <li class="drk_mp4"><video src="video/endwalker_trailer low-size/Dark_knight.mp4" controls></video></li>
+              <li class="gnb_mp4"><video src="video/endwalker_trailer low-size/Gunbreaker.mp4" controls></video></li>
+              <li class="whm_mp4"><video src="video/endwalker_trailer low-size/White_mage.mp4" controls></video></li>
+              <li class="sch_mp4"><video src="video/endwalker_trailer low-size/Scholar.mp4" controls></video></li>
+              <li class="ast_mp4"><video src="video/endwalker_trailer low-size/Astrologian.mp4" controls></video></li>
+              <li class="drg_mp4"><video src="video/endwalker_trailer low-size/Dragoon.mp4" controls></video></li>
+              <li class="mnk_mp4"><video src="video/endwalker_trailer low-size/Monk.mp4" controls></video></li>
+              <li class="nin_mp4"><video src="video/endwalker_trailer low-size/Ninja.mp4" controls></video></li>
+              <li class="sam_mp4"><video src="video/endwalker_trailer low-size/Samurai.mp4" controls></video></li>
+              <li class="brd_mp4"><video src="video/endwalker_trailer low-size/Bard.mp4" controls></video></li>
+              <li class="mch_mp4"><video src="video/endwalker_trailer low-size/Machinist.mp4" controls></video></li>
+              <li class="dnc_mp4"><video src="video/endwalker_trailer low-size/Dancer.mp4" controls></video></li>
+              <li class="blm_mp4"><video src="video/endwalker_trailer low-size/Black_mage.mp4" controls></video></li>
+              <li class="smn_mp4"><video src="video/endwalker_trailer low-size/Summoner.mp4" controls></video></li>
+              <li class="rdm_mp4"><video src="video/endwalker_trailer low-size/Red_mage.mp4" controls></video></li>
             </ul>
           </div>
 

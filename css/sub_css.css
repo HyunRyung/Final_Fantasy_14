@@ -19,7 +19,7 @@ h2{color: #555; margin-bottom: 30px;}
 .content{width: 80%; height: 100%; padding: 30px 0 0 50px;}
 
 .content_title{width: 100%; height: 10%; border-bottom: 1px solid #ccc; margin-bottom: 50px;}
-.content input{width: 470px; height: 50px; border:1px solid #999; float: right;}
+.content input{width: 470px; height: 50px; border:1px solid #999; float: right; padding-left: 20px;}
 .content input:focus{outline: 1px solid #999;}
 
 /* content_list */
@@ -37,8 +37,8 @@ h2{color: #555; margin-bottom: 30px;}
 .list_img img{width: 100%; height: 100%;}
 
 /* job_video */
-.job_video{width: 100%; height: 40%; display: flex; justify-content: space-around}
-.video_place{width: 55%; height: 100%; border: 1px #000 solid; float: left;}
+.job_video{width: 100%; height: 40%; display: flex; justify-content: space-around;}
+.video_place{width: 55%; height: 100%; float: left;}
 .icon_place{width: 45%; height: 100%; float: right; font-size: 14px;}
 .icon_place li{cursor: pointer;}
 
