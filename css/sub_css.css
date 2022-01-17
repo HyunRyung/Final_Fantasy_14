@@ -45,21 +45,22 @@ h2{color: #555; margin-bottom: 30px;}
 .video_list video{width: 100%; height: 100%;}
 .video_list li:not(:first-of-type){display: none;}
 
-.icon_list_t{width: 100%; height: 20%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap;}
-.icon_list_t li{width: 80px; height: 80px; line-height: 20px; text-align: center;}
-.icon_list_t li img{width: 50px; height: 50px;}
+.icon_list_t{width: 100%; height: 25%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap;}
+.icon_list_t li{width: 25%; height: 100%; text-align: center;}
+.icon_list_t li img{width: 48px; height: 48px;}
 
 .icon_list_h{width: 100%; height: 20%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap;}
-.icon_list_h li{width: 80px; height: 80px; line-height: 20px; text-align: center;}
-.icon_list_h li img{width: 50px; height: 50px;}
+.icon_list_h li{width: 25%; height: 100%; line-height: 20px; text-align: center;}
+.icon_list_h li img{width: 48px; height: 48px;}
 
 .icon_list_d1{width: 100%; height: 25%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap;}
-.icon_list_d1 li{width: 80px; height: 80px; line-height: 20px; text-align: center;}
-.icon_list_d1 li img{width: 50px; height: 50px;}
+.icon_list_d1 li{width: 20%; height: 100%; text-align: center;}
+.icon_list_d1 li img{width: 48px; height: 48px;}
+
 
 .icon_list_d2{width: 100%; height: 25%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap;}
-.icon_list_d2 li{width: 80px; height: 80px; line-height: 20px; text-align: center;}
-.icon_list_d2 li img{width: 50px; height: 50px;}
+.icon_list_d2 li{width: 20%; height: 100%; text-align: center;}
+.icon_list_d2 li img{width: 48px; height: 48px;}
 
 
 }
