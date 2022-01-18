@@ -1,11 +1,13 @@
+
+
 @media (min-width:1200px) {
 
 header{border-bottom: 1px solid #eee;}
 footer{border-top:1px solid #666; float: left;}
 h2{color: #555; margin-bottom: 30px;}
 /* guide_bar */
-.guide_bar{width: 20%; height: calc(130vh - 50px); background:#000; color:#BD9D7C; float: left;}
-.bar_logo{width:100%; height: 17%; margin: 0 auto; margin-bottom: 10%; }
+.guide_bar{width: 20%; height: calc(200vh - 50px); background:#000; color:#BD9D7C; float: left;}
+.bar_logo{width:100%; height: 12%; margin: 0 auto; margin-bottom: 10%; }
 .bar_logo img{width: 100%; height: 100%;}
 .guide_list{width: 100%; cursor:pointer;} 
 .guide_list li{width: 100%; margin: 0 auto; border-top: 1px solid #666; line-height: 40px;}
@@ -15,7 +17,7 @@ h2{color: #555; margin-bottom: 30px;}
 .guide_sub li:hover{background:#fff; color:#000;}
 
 /* guide_content */
-.guide_content{width: 80%; height: 100vh; float: right;}
+.guide_content{width: 80%; height: calc(200vh - 50px); float: right;}
 .content{width: 80%; height: 100%; margin: 0 auto; padding: 30px 0 0 0;}
 
 .content_title{width: 100%; height: 10%; border-bottom: 1px solid #ccc; margin-bottom: 50px;}
@@ -23,7 +25,7 @@ h2{color: #555; margin-bottom: 30px;}
 .content input:focus{outline: 1px solid #999;}
 
 /* content_list */
-.content_list{width: 100%; height: 40%; margin-bottom: 100px;}
+.content_list{width: 100%; height: 30%; margin-bottom: 100px;}
 
 .list_place{width: 90%; height: 85%; border: 1px solid #ccc; margin: 0 auto; } 
 .list_guide{width: 40%; height: 100%;float:left; text-align: center;}
@@ -37,30 +39,19 @@ h2{color: #555; margin-bottom: 30px;}
 .list_img img{width: 100%; height: 100%;}
 
 /* job_video */
-.job_video{width: 100%; height: 40%; display: flex; justify-content: space-around;}
-.video_place{width: 55%; height: 100%; float: left;}
-.icon_place{width: 45%; height: 100%; float: right; font-size: 14px; padding-top: 10px;}
+.job_video{width: 1200px; height: 1000px; margin: 0 auto;}
+.video_place{width: 100%; height: 0; position: relative; padding-top: 56%; margin: 0 auto;}
+.video_place video{width: 1000px; height:100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+
+.icon_place{width: 1000px; height: 8%; font-size: 14px; margin: 0; margin: 0 auto;}
 .icon_place li{cursor: pointer;}
 
-.video_list video{width: 100%; height: 100%;}
 .video_list li:not(:first-of-type){display: none;}
 
-.icon_list_t{width: 100%; height: 25%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap;}
-.icon_list_t li{width: 25%; height: 100%; text-align: center;}
-.icon_list_t li img{width: 48px; height: 48px;}
+.icon_list{width: 100%; height: 100%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap; }
+.icon_list li{width: calc(100% / 10); height: 50%; text-align: center; border: 1px solid #eee; border-radius: 10px; padding-top: 5px; margin: 5px;}
+.icon_list li img{width: 20px; height: 20px; vertical-align: middle;}
 
-.icon_list_h{width: 100%; height: 20%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap;}
-.icon_list_h li{width: 25%; height: 100%; line-height: 20px; text-align: center;}
-.icon_list_h li img{width: 48px; height: 48px;}
-
-.icon_list_d1{width: 100%; height: 25%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap;}
-.icon_list_d1 li{width: 20%; height: 100%; text-align: center;}
-.icon_list_d1 li img{width: 48px; height: 48px;}
-
-
-.icon_list_d2{width: 100%; height: 25%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap;}
-.icon_list_d2 li{width: 20%; height: 100%; text-align: center;}
-.icon_list_d2 li img{width: 48px; height: 48px;}
 
 
 }

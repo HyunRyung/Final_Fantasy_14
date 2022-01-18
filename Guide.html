@@ -47,6 +47,7 @@
         blm_detach = $(".blm_mp4").detach();
         smn_detach = $(".smn_mp4").detach();
         rdm_detach = $(".rdm_mp4").detach();
+        sag_detach = $(".sag_mp4").detach();
 
       $(".video_list").append(pld_detach);
 
@@ -100,6 +101,13 @@
         $(".video_list").append(ast_detach);
         $(".video_list li").not(".ast_mp4").detach().hide();
         $(".ast_mp4").show();
+
+      });
+      
+      $(".sag_icon").click(function(){
+        $(".video_list").append(sag_detach);
+        $(".video_list li").not(".sag_mp4").detach().hide();
+        $(".sag_mp4").show();
 
       });
 
@@ -290,9 +298,34 @@
         </div>
       </div>
 
+
       <h2>전투 직업 소개</h2>
         <div class="job_video">
 
+          <div class="icon_place">
+
+            <ul class="icon_list">
+              <li class="pld_icon"><img src="img/sub/job_icon/paladin.jpg" alt="paladin_icon"> 나이트</li>
+              <li class="war_icon"><img src="img/sub/job_icon/warrior.jpg" alt="warrior_icon"> 전사</li>
+              <li class="drk_icon"><img src="img/sub/job_icon/dark_knight.jpg" alt="dark_knight_icon"> 암흑기사</li>
+              <li class="gnb_icon"><img src="img/sub/job_icon/gunbraker.jpg" alt="gunbraker_icon"> 건브레이커</li>
+              <li class="whm_icon"><img src="img/sub/job_icon/white_mage.jpg" alt="white_mage_icon"> 백마도사</li>
+              <li class="sch_icon"><img src="img/sub/job_icon/scholar.jpg" alt="scholar_icon"> 학자</li>
+              <li class="ast_icon"><img src="img/sub/job_icon/astrologian.jpg" alt="astrologian"> 점성술사</li>
+              <li class="sag_icon"><img src="img/sub/job_icon/sage.jpg" alt="sage"> 현자</li>
+              <li class="drg_icon"><img src="img/sub/job_icon/dragoon.jpg" alt="dragoon_icon"> 용기사</li>
+              <li class="mnk_icon"><img src="img/sub/job_icon/monk.jpg" alt="monk_icon"> 몽크</li>
+              <li class="nin_icon"><img src="img/sub/job_icon/ninja.jpg" alt="ninja_icon"> 닌자</li>
+              <li class="sam_icon"><img src="img/sub/job_icon/samurai.jpg" alt="samurai_icon"> 사무라이</li>
+              <li class="brd_icon"><img src="img/sub/job_icon/bard.jpg" alt="bard_icon"> 음유시인</li>
+              <li class="mch_icon"><img src="img/sub/job_icon/machinist.jpg" alt="machinist_icon"> 기공사</li>
+              <li class="dnc_icon"><img src="img/sub/job_icon/dancer.jpg" alt="dancer_icon"> 무도가</li>
+              <li class="blm_icon"><img src="img/sub/job_icon/black_mage.jpg" alt="black_mage_icon"> 흑마도사</li>
+              <li class="smn_icon"><img src="img/sub/job_icon/summoner.jpg" alt="summoner_icon"> 소환사</li>
+              <li class="rdm_icon"><img src="img/sub/job_icon/red_mage.jpg" alt="red_mage_icon"> 적마도사</li>
+            </ul>
+
+          </div>
 
           <div class="video_place">
             <ul class="video_list">
@@ -303,6 +336,7 @@
               <li class="whm_mp4"><video src="video/endwalker_trailer low-size/White_mage.mp4" controls></video></li>
               <li class="sch_mp4"><video src="video/endwalker_trailer low-size/Scholar.mp4" controls></video></li>
               <li class="ast_mp4"><video src="video/endwalker_trailer low-size/Astrologian.mp4" controls></video></li>
+              <li class="sag_mp4"><video src="video/endwalker_trailer low-size/Sage.mp4" controls></video></li>
               <li class="drg_mp4"><video src="video/endwalker_trailer low-size/Dragoon.mp4" controls></video></li>
               <li class="mnk_mp4"><video src="video/endwalker_trailer low-size/Monk.mp4" controls></video></li>
               <li class="nin_mp4"><video src="video/endwalker_trailer low-size/Ninja.mp4" controls></video></li>
@@ -316,35 +350,6 @@
             </ul>
           </div>
 
-          <div class="icon_place">
-            <ul class="icon_list_t">
-              <li class="pld_icon"><img src="img/sub/job_icon/paladin.jpg" alt="paladin_icon"> <br>나이트</li>
-              <li class="war_icon"><img src="img/sub/job_icon/warrior.jpg" alt="warrior_icon"> <br>전사</li>
-              <li class="drk_icon"><img src="img/sub/job_icon/dark_knight.jpg" alt="dark_knight_icon"> <br>암흑기사</li>
-              <li class="gnb_icon"><img src="img/sub/job_icon/gunbraker.jpg" alt="gunbraker_icon"> <br>건브레이커</li>
-            </ul><br>
-            <ul class="icon_list_h">
-              <li class="whm_icon"><img src="img/sub/job_icon/white_mage.jpg" alt="white_mage_icon"> <br>백마도사</li>
-              <li class="sch_icon"><img src="img/sub/job_icon/scholar.jpg" alt="scholar_icon"> <br>학자</li>
-              <li class="ast_icon"><img src="img/sub/job_icon/astrologian.jpg" alt="astrologian"> <br>점성술사</li>
-            </ul><br>
-            <ul class="icon_list_d1">
-              <li class="drg_icon"><img src="img/sub/job_icon/dragoon.jpg" alt="dragoon_icon"> <br>용기사</li>
-              <li class="mnk_icon"><img src="img/sub/job_icon/monk.jpg" alt="monk_icon"> <br>몽크</li>
-              <li class="nin_icon"><img src="img/sub/job_icon/ninja.jpg" alt="ninja_icon"> <br>닌자</li>
-              <li class="sam_icon"><img src="img/sub/job_icon/samurai.jpg" alt="samurai_icon"> <br>사무라이</li>
-              <li class="brd_icon"><img src="img/sub/job_icon/bard.jpg" alt="bard_icon"> <br>음유시인</li>
-            </ul>
-            <ul class="icon_list_d2">
-              <li class="mch_icon"><img src="img/sub/job_icon/machinist.jpg" alt="machinist_icon"> <br>기공사</li>
-              <li class="dnc_icon"><img src="img/sub/job_icon/dancer.jpg" alt="dancer_icon"> <br>무도가</li>
-              <li class="blm_icon"><img src="img/sub/job_icon/black_mage.jpg" alt="black_mage_icon"> <br>흑마도사</li>
-              <li class="smn_icon"><img src="img/sub/job_icon/summoner.jpg" alt="summoner_icon"> <br>소환사</li>
-              <li class="rdm_icon"><img src="img/sub/job_icon/red_mage.jpg" alt="red_mage_icon"> <br>적마도사</li>
-            </ul>
-
-
-          </div>
 
         </div>
 
