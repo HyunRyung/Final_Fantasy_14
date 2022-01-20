@@ -14,6 +14,8 @@
 
     $(function () {
 
+      video_save = $(".trailer").detach();
+      $(".trailer_cover").append(video_save);
       
       $(".menu_icon").click(function () {
           $(".max599_menu").slideToggle();
@@ -22,12 +24,13 @@
       $(window).resize(function () {
         if (window.innerWidth<=599) {
           $(".max599_menu").css({ "display": "none" });
-          video_save = $(".trailer").detach();
-          $(".trailer_cover").append(video_save)
+          video_save;
+          $(".trailer_cover").append(".trailer");
           $(".trailer_cover").hide();
 
-        }else{
-          
+        }else{  
+          $(".trailer").detach();
+
         }
       });
 
@@ -53,10 +56,21 @@
         
         $(".main_599").css({"display":"none"});
 
+        $(".video_button").click(function () {
+        $(".trailer_cover").show();
+        $(".trailer_cover").append(video_save);
+
+      });
+
+      $(".video_close").click(function () {
+        video_save = $(".trailer").detach();
+        $(".trailer_cover").hide();
+      });
+
+        
+
 
       } else { // 뷰포트 599 이하 
-
-        video_save;
 
         $(".max599_menu>li").click(function () {
           $(".max599_sub").not(this).stop().slideUp();
@@ -110,16 +124,6 @@
         slide_play = setInterval(event_slide_fun, 3000);
       });
 
-      $(".video_button").click(function () {
-        $(".trailer_cover").show();
-        $(".trailer_cover").append(video_save);
-
-      });
-
-      $(".video_close").click(function () {
-        video_save = $(".trailer").detach();
-        $(".trailer_cover").hide();
-      });
 
 
     });

@@ -116,7 +116,7 @@
   /* video */
   .trailer_cover{width: 100vw; height: 100vh; background: rgba(0,0,0,0.7);display:none; z-index: 98; overflow: hidden; position:fixed; left: 0; right:0;}
   .trailer{width: 85%; height:85%; margin: 0 auto; position:relative; top: 10%; left: 7%;}
-  .trailer iframe{width: 80%; height: 80%; border:none}
+  .trailer iframe{width: 75%; height: 50%; position: absolute; top: 10%; left: 5%; border:none}
   .video_close{width: 30px; height: 30px; position: absolute; top: 0; right: 10%; cursor: pointer;}
   .video_close img{width: 100%;height: 100%;}
   /* main_content */
