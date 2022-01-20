@@ -1,4 +1,106 @@
+@media (max-width:599px){
+    header{border-bottom: 1px solid #eee;}
+    footer{border-top:1px solid #666; float: left;}
+    h2{color: #555; margin-bottom: 30px;}
+    /* guide_bar */
+    .guide_bar{width: 25%; height: calc(180vh - 50px); background:#000; color:#BD9D7C; float: left;}
+    .bar_logo{width:100%; height: 12%; margin: 0 auto; margin-bottom: 10%; }
+    .bar_logo img{width: 100%; height: 100%;}
+    .guide_list{width: 100%; cursor:pointer;} 
+    .guide_list li{width: 100%; margin: 0 auto; border-top: 1px solid #666; line-height: 40px;}
+    .guide_list li:nth-of-type(6){border-bottom: 1px solid #666;}
+    .guide_sub{display: none; background: #111;}
+    .guide_sub li{ padding-left: 40px;}
+    .guide_sub li:hover{background:#fff; color:#000;}
+    
+    /* guide_content */
+    .guide_content{width: 75%; height: calc(180vh - 50px); float: right;}
+    .content{width: 80%; height: 100%; margin: 0 auto; padding: 30px 0 0 0;}
+    
+    .content_title{width: 100%; height: 10%; border-bottom: 1px solid #ccc; margin-bottom: 50px;}
+    .content input{width: 470px; height: 50px; border:1px solid #999; float: right; padding-left: 20px;}
+    .content input:focus{outline: 1px solid #999;}
+    
+    /* content_list */
+    .content_list{width: 100%; height: 20%; margin-bottom: 100px; font-size: 14px;}
+    
+    .list_place{width: 90%; height: 85%; border: 1px solid #ccc; margin: 0 auto; } 
+    .list_guide{width: 40%; height: 100%;float:left; text-align: center;}
+    .list_guide li{width: 100%; height: 25%; border-bottom: 1px solid #999;  display: flex; justify-content: center; align-items: center; align-content: center; cursor: pointer; box-shadow: 5px 10px 20px 1px #eee inset;}
+    .list_guide li:first-of-type{background: linear-gradient(0deg,#353c58 0,#3a425d); box-shadow: 1px 1px 5px 1px #777 inset; color:#fff; font-weight: bold;}
+    .list_guide li:nth-of-type(4){border:none}
+    
+    .list_img{width: 60%; height: 100%; overflow: hidden; float:right; cursor: pointer;}
+    .list_img li{width: 100%; height: 100%;}    
+    .list_img li:not(:first){display: none}
+    .list_img img{width: 100%; height: 100%;}
+    
+    /* job_video */
+    .job_video{width: 100%; height: 400px; margin: 0 auto;}
+    .video_place{width: 100%; height: 80%; position: relative; padding-top: 56%; margin: 0 auto;}
+    .video_place video{max-width: 800px; height:100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+    
+    .icon_place{width: 100%; height: 15%; font-size: 14px; margin: 0; margin: 0 auto; font-size: 10px;}
+    .icon_place li{cursor: pointer;}
+    
+    .video_list li:not(:first-of-type){display: none;}
+    
+    .icon_list{width: 100%; height: 100%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap; }
+    .icon_list li{width: calc(100% / 10); height: 50%; text-align: center; border: 1px solid #eee; border-radius: 10px; padding-top: 5px; margin: 5px;}
+    .icon_list li img{width: 17px; height: 17px; vertical-align: middle;}  
+}
 
+@media (min-width:600px) and (max-width:1199px) {
+    header{border-bottom: 1px solid #eee;}
+    footer{border-top:1px solid #666; float: left;}
+    h2{color: #555; margin-bottom: 30px;}
+    /* guide_bar */
+    .guide_bar{width: 25%; height: calc(180vh - 50px); background:#000; color:#BD9D7C; float: left;}
+    .bar_logo{width:100%; height: 12%; margin: 0 auto; margin-bottom: 10%; }
+    .bar_logo img{width: 100%; height: 100%;}
+    .guide_list{width: 100%; cursor:pointer;} 
+    .guide_list li{width: 100%; margin: 0 auto; border-top: 1px solid #666; line-height: 40px;}
+    .guide_list li:nth-of-type(6){border-bottom: 1px solid #666;}
+    .guide_sub{display: none; background: #111;}
+    .guide_sub li{ padding-left: 40px;}
+    .guide_sub li:hover{background:#fff; color:#000;}
+    
+    /* guide_content */
+    .guide_content{width: 75%; height: calc(180vh - 50px); float: right;}
+    .content{width: 80%; height: 100%; margin: 0 auto; padding: 30px 0 0 0;}
+    
+    .content_title{width: 100%; height: 10%; border-bottom: 1px solid #ccc; margin-bottom: 50px;}
+    .content input{width: 470px; height: 50px; border:1px solid #999; float: right; padding-left: 20px;}
+    .content input:focus{outline: 1px solid #999;}
+    
+    /* content_list */
+    .content_list{width: 100%; height: 20%; margin-bottom: 100px; font-size: 14px;}
+    
+    .list_place{width: 90%; height: 85%; border: 1px solid #ccc; margin: 0 auto; } 
+    .list_guide{width: 40%; height: 100%;float:left; text-align: center;}
+    .list_guide li{width: 100%; height: 25%; border-bottom: 1px solid #999;  display: flex; justify-content: center; align-items: center; align-content: center; cursor: pointer; box-shadow: 5px 10px 20px 1px #eee inset;}
+    .list_guide li:first-of-type{background: linear-gradient(0deg,#353c58 0,#3a425d); box-shadow: 1px 1px 5px 1px #777 inset; color:#fff; font-weight: bold;}
+    .list_guide li:nth-of-type(4){border:none}
+    
+    .list_img{width: 60%; height: 100%; overflow: hidden; float:right; cursor: pointer;}
+    .list_img li{width: 100%; height: 100%;}    
+    .list_img li:not(:first){display: none}
+    .list_img img{width: 100%; height: 100%;}
+    
+    /* job_video */
+    .job_video{width: 100%; height: 400px; margin: 0 auto;}
+    .video_place{width: 100%; height: 80%; position: relative; padding-top: 56%; margin: 0 auto;}
+    .video_place video{max-width: 800px; height:100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+    
+    .icon_place{width: 100%; height: 15%; font-size: 14px; margin: 0; margin: 0 auto; font-size: 10px;}
+    .icon_place li{cursor: pointer;}
+    
+    .video_list li:not(:first-of-type){display: none;}
+    
+    .icon_list{width: 100%; height: 100%; display: flex; justify-content: space-around; align-items: center; align-content: center; flex-wrap: wrap; }
+    .icon_list li{width: calc(100% / 10); height: 50%; text-align: center; border: 1px solid #eee; border-radius: 10px; padding-top: 5px; margin: 5px;}
+    .icon_list li img{width: 17px; height: 17px; vertical-align: middle;}  
+}
 
 @media (min-width:1200px) {
 
@@ -6,7 +108,7 @@ header{border-bottom: 1px solid #eee;}
 footer{border-top:1px solid #666; float: left;}
 h2{color: #555; margin-bottom: 30px;}
 /* guide_bar */
-.guide_bar{width: 20%; height: calc(200vh - 50px); background:#000; color:#BD9D7C; float: left;}
+.guide_bar{width: 20%; height: calc(180vh - 50px); background:#000; color:#BD9D7C; float: left;}
 .bar_logo{width:100%; height: 12%; margin: 0 auto; margin-bottom: 10%; }
 .bar_logo img{width: 100%; height: 100%;}
 .guide_list{width: 100%; cursor:pointer;} 
@@ -17,7 +119,7 @@ h2{color: #555; margin-bottom: 30px;}
 .guide_sub li:hover{background:#fff; color:#000;}
 
 /* guide_content */
-.guide_content{width: 80%; height: calc(200vh - 50px); float: right;}
+.guide_content{width: 80%; height: calc(180vh - 50px); float: right;}
 .content{width: 80%; height: 100%; margin: 0 auto; padding: 30px 0 0 0;}
 
 .content_title{width: 100%; height: 10%; border-bottom: 1px solid #ccc; margin-bottom: 50px;}
@@ -25,7 +127,7 @@ h2{color: #555; margin-bottom: 30px;}
 .content input:focus{outline: 1px solid #999;}
 
 /* content_list */
-.content_list{width: 100%; height: 30%; margin-bottom: 100px;}
+.content_list{width: 100%; height: 27%; margin-bottom: 100px;}
 
 .list_place{width: 90%; height: 85%; border: 1px solid #ccc; margin: 0 auto; } 
 .list_guide{width: 40%; height: 100%;float:left; text-align: center;}

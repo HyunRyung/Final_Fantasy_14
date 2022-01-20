@@ -22,7 +22,7 @@
       $(window).resize(function () {
         if (window.innerWidth<=599) {
           $(".max599_menu").css({ "display": "none" });
-          let video_save = $(".trailer").detach();
+          video_save = $(".trailer").detach();
           $(".trailer_cover").append(video_save)
           $(".trailer_cover").hide();
 
@@ -55,6 +55,8 @@
 
 
       } else { // 뷰포트 599 이하 
+
+        video_save;
 
         $(".max599_menu>li").click(function () {
           $(".max599_sub").not(this).stop().slideUp();
