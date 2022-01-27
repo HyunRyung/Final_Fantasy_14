@@ -12,6 +12,11 @@
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
   <script>
     $(function(){
+
+
+    if (window.matchMedia("(min-width: 600px)").matches) { /* 뷰포트 600 이상 */ 
+    
+      
       $(".guide_list li").click(function(){
         $(".guide_sub").stop().slideUp();
         $(this).find(".guide_sub").stop().slideDown();
@@ -181,6 +186,15 @@
 
       });
 
+
+
+
+    } else { /* 뷰포트 599 이하 */
+
+      $(".guide_bar").css({"display":"none"});
+      $(".guide_content").css({"display":"none"});
+
+    }
 
 
 

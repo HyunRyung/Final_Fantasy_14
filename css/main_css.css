@@ -252,7 +252,7 @@ header{width:100% ;height: 50px; position:fixed; top: 0; z-index: 97;}
 .video_close img{width: 100%;height: 100%;}
 /* main_content */
 .main_content{width: 100%; height: 1500px; position: relative; margin: 100px 0 150px 0 ; background: #000; }
-.back_img{width: 1200px; height: 520px; margin: 0 auto; margin-bottom: 20px;}
+.back_img{width: 1200px; height: 520px; margin: 0 auto; margin-bottom: 20px; border: none;}
 .video_button{width: 400px; height: 70px; cursor: pointer; margin: 0 auto; margin-bottom: 90px; border-radius: 100px; border: 1px solid #000; color: #fff; text-align: center; font-weight: bold; font-size: 20px; background: #3f277d; padding-top: 20px; box-shadow: 1px 3px 14px 3px #333 inset;}
 .max599_menu{display: none;}
 .top_bar{width: 100%; height: 70px; margin: 0 auto; background: #000; color: #fff; text-align: center; position: absolute; top:100%;}
